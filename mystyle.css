@@ -1,0 +1,133 @@
+
+@media screen and (max-width: 480px){
+    #head{
+        height: auto;
+    }
+    #main{
+        width: auto;
+    }
+    #footer{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 980px){
+    #head{
+        width: 60%;
+        max-width: 1024px;
+    }
+    #main{
+        width: 60%;
+    }
+    #footer{
+        width:30%;
+    }
+}
+h1{
+    position:relative; left:-29%; top:30px;
+    color: #0a3871;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 160%; 
+    text-align: center;
+    
+}
+
+head{
+    background: #0a3871;
+}
+.logo{
+    position:relative; left:60px; top:50px;
+}
+
+body{
+    width: 100%;
+    margin: relative;
+    margin: 0 auto;
+    background-image: url(img/fondo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+textarea#texto1{
+    resize: none;
+    width:160px;
+    height: 160px;
+    padding:0px;
+    border:2px solid rgb(10, 0, 0);
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    display: inline-block;
+    position:relative; left :130px; top:30%;
+    text-align: center;
+    
+    
+     
+}
+textarea#texto2{
+    resize: none;
+    width:160px;
+    height:160px;
+    padding: 0px;
+    border:2px solid rgb(9, 0, 0);
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;;
+    display: inline-block;
+    position:relative; left:130px; top:30%;
+    text-align: center;
+   
+    
+}
+
+input#boton1{
+    position:relative; left:-204px; top:22px;
+    width: 160px; height: 25px;
+    border-radius: 0px 0px 10px 10px;
+    border:2px solid rgb(9, 0, 0);
+    background-color: white;
+    font-weight: bold;
+    
+
+}
+input#boton2{
+    position:relative; left:-200px; top:22px;
+    width: 160px; height: 25px;
+    border-radius: 0px 0px 10px 10px;
+    border:2px solid rgb(9, 0, 0);
+    background-color: white;
+    font-weight: bold;
+
+}
+
+
+#boton1:hover{
+    background-color: #0a3871;
+    color: white;
+   
+}
+#boton2:hover{
+    background-color: #0a3871;
+    color: white;
+   
+}
+
+#texto1:hover{
+
+    background-color: #0a3871;
+    color: white;
+}
+#texto2:hover{
+
+    background-color: #0a3871;
+    color: white;
+}
+
+footer{
+    position:relative; left:-28%; top:280px;
+    color: rgb(0, 0, 13);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px; 
+    text-align: center;
+}

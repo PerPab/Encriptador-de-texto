@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div>
+    <head>
+        <title>Encriptador Alura</title>
+        <h1>Encriptador de texto</h1>
+        <link rel="stylesheet" href="reset0.css">
+        <link rel="stylesheet" href="mystyle.css">
+        <img class="logo" src="img/logo.png">
+    </head>
+
+    <body> 
+        <main>
+            <textarea name="texto1" id="texto1" cols="1" rows="1">
+            </textarea>
+            <textarea name="texto2" id="texto2" cols="1" rows="1">   
+            </textarea>
+            <input type="button" id="boton1" value="Encriptar">
+            <input type="button" id="boton2" value="Desencriptar">
+        </main> 
+
+        <script>
+            document.getElementById("texto1").focus();
+            function codificar (){
+            var texto = document.getElementById("texto1").value; 
+            var texto=texto.replace( /[iIí]/g, "imes")
+            var texto=texto.replace( /[eEé]/g, "enter")
+            var texto=texto.replace( /[oOó]/g, "ober")
+            var texto=texto.replace( /[aAá]/g, "ai")
+            var texto=texto.replace( /[uUú]/g, "ufat")
+            document.getElementById("texto2").value = texto;
+            document.getElementById("texto1").value = "";
+        }
+
+            function deCodificar(){
+            var codigo = document.getElementById("texto2").value;
+            var codigo = codigo.replaceAll("ufat", "u")
+            var codigo = codigo.replaceAll("ober", "o")
+            var codigo = codigo.replaceAll("imes", "i")
+            var codigo = codigo.replaceAll("enter", "e")
+            var codigo = codigo.replaceAll("ai", "a")
+            document.getElementById("texto1").value = codigo;
+            document.getElementById("texto2").value = "";
+        }
+            boton1.onclick = codificar;
+            boton2.onclick = deCodificar;
+        </script>
+    </body>
+
+    <footer>
+       Alura LATAM - Pablo Percara 
+    </footer>
+</div>
+</html>
